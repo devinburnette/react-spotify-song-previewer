@@ -59,7 +59,7 @@ class Gallery extends Component {
                 <div className="track-play">
                   <div className="track-play-inner">
                     {
-                      this.state.playingUrl === track.preview_url ? <span>| |</span> : <span>&#9654;</span>
+                      (this.state.playingUrl === track.preview_url) && (this.state.playing === true) ? <span>| |</span> : <span>&#9654;</span>
                     }
                   </div>
                 </div>
